@@ -5,6 +5,22 @@ All notable changes to the Cascade Environment Documentation will be documented 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2024-12-02
+
+### Added
+
+- Automated screenshot generation system for documentation
+- Type-safe screenshot configuration with JSON schema
+- Robust error handling and retry mechanism
+- Debug logging for screenshot capture process
+
+### Technical
+
+- Implemented Playwright-based screenshot capture
+- Optimized page load and capture timing
+- Added configurable viewport and content settling
+- Enhanced logging with debug information
+
 ## [0.2.0] - 2024-03-19
 
 ### Added

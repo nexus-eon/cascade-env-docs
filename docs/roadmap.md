@@ -18,8 +18,16 @@
 - [x] Set up automated link checking
 - [x] Implement documentation linting
 - [x] Configure spell-checking
-- [ ] Add automated screenshot generation
+- [x] Add automated screenshot generation
 - [x] Complete pre-commit hook configuration
+
+### Documentation Automation
+
+- [ ] Implement automated version tagging
+- [ ] Add automated changelog generation
+- [ ] Create screenshot update workflow
+- [ ] Add automated dependency updates
+- [ ] Implement documentation testing
 
 ### User Experience
 
