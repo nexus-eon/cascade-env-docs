@@ -1,0 +1,35 @@
+{
+    "output_directory": "docs/assets/screenshots",
+    "screenshots": [
+        {
+            "name": "documentation-home",
+            "url": "http://localhost:8000",
+            "full_page": false,
+            "wait_time": 2
+        },
+        {
+            "name": "api-docs-example",
+            "url": "http://localhost:8000/api",
+            "selector": ".api-content",
+            "wait_time": 1
+        },
+        {
+            "name": "development-guidelines",
+            "url": "http://localhost:8000/development/guidelines",
+            "full_page": true,
+            "wait_time": 2
+        },
+        {
+            "name": "tools-section",
+            "url": "http://localhost:8000/tools",
+            "selector": "main .content",
+            "wait_time": 1
+        },
+        {
+            "name": "search-results",
+            "url": "http://localhost:8000/search.html",
+            "selector": ".search-results",
+            "wait_time": 3
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "cascade-env-docs"
+version = "0.1.0"
+description = "Documentation and environment setup for Cascade AI Assistant"
+authors = ["Cascade Team"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+mkdocs = "*"
+mkdocs-material = "*"
+mkdocs-material-extensions = "*"
+mkdocs-mermaid2-plugin = "*"
+pyspelling = "*"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "*"
+black = "*"
+isort = "*"
+flake8 = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

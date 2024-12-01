@@ -1,0 +1,34 @@
+matrix:
+- name: Markdown
+  sources:
+  - 'docs/**/*.md'
+  default_encoding: utf-8
+  aspell:
+    lang: en
+    d: en_US
+  dictionary:
+    wordlists:
+    - .dictionary.txt
+    encoding: utf-8
+  pipeline:
+  - pyspelling.filters.markdown:
+      markdown_extensions:
+      - pymdownx.superfences
+      - pymdownx.highlight
+      - pymdownx.inlinehilite
+      - admonition
+      - footnotes
+      - attr_list
+      - md_in_html
+      - tables
+  - pyspelling.filters.html:
+      comments: false
+      attributes:
+      - title
+      - alt
+      ignores:
+      - 'code'
+      - 'pre'
+      - 'blockquote'
+      - '.highlight'
+      - '.codehilite'

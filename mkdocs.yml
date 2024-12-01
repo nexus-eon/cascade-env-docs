@@ -1,0 +1,60 @@
+site_name: Cascade Environment Documentation
+site_description: Documentation and environment setup for Cascade AI Assistant
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - footnotes
+  - attr_list
+  - md_in_html
+  - tables
+
+plugins:
+  - search
+  - mermaid2
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Project Status:
+    - Definition of Done: definition-of-done.md
+    - Project Analysis: project-analysis.md
+    - Project Roadmap: roadmap.md
+    - Architecture: architecture.md
+  - Environment:
+    - Setup: environment/setup.md
+    - Configuration: environment/configuration.md
+  - Tools:
+    - Overview: tools/overview.md
+    - Usage: tools/usage.md
+  - Development:
+    - Guidelines: development/guidelines.md
+    - Best Practices: development/best-practices.md
+    - Style Guide: development/style-guide.md
+    - Documentation Template: development/template.md

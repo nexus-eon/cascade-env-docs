@@ -1,0 +1,62 @@
+/* Difficulty Level Admonitions */
+.md-typeset .admonition.difficulty,
+.md-typeset details.difficulty {
+    border-color: rgb(43, 155, 70);
+}
+
+.md-typeset .difficulty>.admonition-title,
+.md-typeset .difficulty>summary {
+    background-color: rgba(43, 155, 70, 0.1);
+    border-color: rgb(43, 155, 70);
+}
+
+.md-typeset .difficulty>.admonition-title::before,
+.md-typeset .difficulty>summary::before {
+    background-color: rgb(43, 155, 70);
+    -webkit-mask-image: var(--md-admonition-icon--note);
+    mask-image: var(--md-admonition-icon--note);
+}
+
+/* Time Estimate Admonitions */
+.md-typeset .admonition.time,
+.md-typeset details.time {
+    border-color: rgb(68, 138, 255);
+}
+
+.md-typeset .time>.admonition-title,
+.md-typeset .time>summary {
+    background-color: rgba(68, 138, 255, 0.1);
+    border-color: rgb(68, 138, 255);
+}
+
+.md-typeset .time>.admonition-title::before,
+.md-typeset .time>summary::before {
+    background-color: rgb(68, 138, 255);
+    -webkit-mask-image: var(--md-admonition-icon--clock);
+    mask-image: var(--md-admonition-icon--clock);
+}
+
+/* Difficulty Level Badges */
+.difficulty-badge {
+    display: inline-block;
+    padding: 0.2em 0.6em;
+    margin: 0 0.2em;
+    border-radius: 3px;
+    font-size: 0.75em;
+    font-weight: bold;
+}
+
+.difficulty-beginner {
+    background-color: #28a745;
+    color: white;
+}
+
+.difficulty-intermediate {
+    background-color: #ffc107;
+    color: black;
+}
+
+.difficulty-advanced {
+    background-color: #dc3545;
+    color: white;
+}

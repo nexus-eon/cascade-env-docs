@@ -1,0 +1,20 @@
+Mypy Results for screenshot_generator.py (2024-03-19):
+
+1. Missing type parameters for generic type "Dict" [type-arg]
+   - Line 35
+   - Line 68
+   - Line 87
+   - Line 121
+
+2. Return type issues:
+   - Line 42: Returning Any from function declared to return "dict[Any, Any]" [no-any-return]
+   - Line 66: Returning Any from function declared to return "Page" [no-any-return]
+   - Line 121: Missing return statement [return]
+
+3. Function argument typing:
+   - Line 44: Function is missing a type annotation for one or more arguments [no-untyped-def]
+
+4. Union type attribute access:
+   - Line 103: Item "None" of "ElementHandle | None" has no attribute "screenshot" [union-attr]
+
+Total: 9 errors found in 1 file
